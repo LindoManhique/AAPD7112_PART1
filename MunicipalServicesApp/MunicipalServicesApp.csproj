@@ -46,7 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Event.cs" />
+    <Compile Include="EventRecommendations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventRecommendations.Designer.cs">
+      <DependentUpon>EventRecommendations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Issue.cs" />
+    <Compile Include="LocalEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalEvents.Designer.cs">
+      <DependentUpon>LocalEvents.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +74,12 @@
     <Compile Include="ReportIssues.Designer.cs">
       <DependentUpon>ReportIssues.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EventRecommendations.resx">
+      <DependentUpon>EventRecommendations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalEvents.resx">
+      <DependentUpon>LocalEvents.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
