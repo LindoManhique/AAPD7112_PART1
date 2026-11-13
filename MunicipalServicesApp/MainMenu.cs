@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,10 +33,17 @@ namespace MunicipalServicesApp
             ReportIssues reportIssuesForm = new ReportIssues();
             reportIssuesForm.ShowDialog();
         }
+
         private void btnEvents_Click(object sender, EventArgs e)
         {
             LocalEvents eventsForm = new LocalEvents();
             eventsForm.ShowDialog();
+        }
+
+        private void btnServiceRequestStatus_Click(object sender, EventArgs e)
+        {
+            ServiceRequestStatus statusForm = new ServiceRequestStatus();
+            statusForm.ShowDialog();
         }
 
         private void exitbttn(object sender, EventArgs e)
@@ -44,4 +52,3 @@ namespace MunicipalServicesApp
         }
     }
 }
-

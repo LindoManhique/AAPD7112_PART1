@@ -13,5 +13,10 @@ namespace MunicipalServicesApp
         public string Description { get; set; }
         public string AttachmentPath { get; set; }
         public DateTime DateReported { get; set; }
+        public string RequestID { get; set; }
+
+        public string Status { get; set; }
+
+        public DateTime LastUpdated { get; set; }
     }
 }
